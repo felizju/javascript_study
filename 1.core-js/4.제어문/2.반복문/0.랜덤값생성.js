@@ -37,7 +37,7 @@ console.log(`랜덤 정수 : ${ri}`);
     랜덤 정수 공식 : x이상 y이하의 랜덤 정수 생성
 
     - Math.floor(Math.random() * (y - x + 1) + x);
-
+    
     15 ~ 37 랜덤값
     - Math.floor(Math.random() * 23) + 15);
 */
