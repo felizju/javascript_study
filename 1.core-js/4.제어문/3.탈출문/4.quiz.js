@@ -11,21 +11,48 @@
    누적된 정답 횟수와 오답횟수를 출력하세요.
 */
 
-var count1 = 0;
-var count2 = 0;
+// 정답 횟수 오답 횟수 저장변수
+var count1 = 0, count2 = 0;
 
 
 while(true){
-    var rn1 = Math.floor(Math.random()*101);
-    var rn2 = Math.floor(Math.random()*101);
-    var user = +prompt(`${rn1} + ${rn2} = ??`);
+    var rn1 = Math.floor(Math.random() * 20) + 1;
+    var rn2 = Math.floor(Math.random() * 20) + 1;
+    
+    // 1234의 랜덤 정수 생성
+    var oprn = Math.floor(Math.random() * 4) + 1;
+    
+    if(oprn === 1){
+        oprn = '+';
+    }else if(oprn === 2){
+        oprn = '-';
+    }else if(oprn === 3){
+        oprn = '*';
+    }else{
+        oprn = '/';
+    }
+    
+    // 사용자 답
+    var userAnswer = +prompt(`${rn1} ${oprn} ${rn2} = ??`);
 
-    if(user === 0){
-        alert(`프로그램이 종료되었습니다.
-#정답 횟수 : ${count1} , 오답횟수 : ${count2}`);
-        countinue;
-        
-    }else if(user === (rn1 + rn2)){
+    // 탈출 조건 (0입력 시)
+    if(userAnswer === 0){
+        break;
+    }
+    
+    // 실제 답
+    var realAnswer;
+    if(oprn === '+'){
+        realAnswer =  rn1 + rn2;
+    }else if(oprn === '-'){
+        realAnswer = rn1 - rn2;
+    }else if(oprn === '*'){
+        realAnswer = rn1 * rn2;
+    }else{
+        realAnswer = rn1 / rn2;
+    }
+
+    if(userAnswer === realAnswer){
         alert(`정답입니다.`);
         count1++;
     }
@@ -35,3 +62,5 @@ while(true){
         count2++;
     }
 }
+alert(`프로그램이 종료되었습니다.
+#정답 횟수 : ${count1} , 오답횟수 : ${count2}`);
