@@ -13,4 +13,3 @@ var ex3 = +'550';       // number
 var ex4 = true + '';    // string
 var ex5 = +false;       // number
 console.log(ex5);
-

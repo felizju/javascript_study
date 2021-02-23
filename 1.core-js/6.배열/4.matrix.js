@@ -43,7 +43,7 @@ for(var studentScores of ourStudentScores){
     // 한 학생의 평균점수
     var eachAverage = eachTotal / studentScores.length;
 
-    ourAverages  += eachAverage;
+    ourAverages  += eachAverage; // 반 점수 총점
     korSum += studentScores[0]; // 국어 점수 총점
     engSum += studentScores[1]; // 영어 점수 총점
     engSum += studentScores[2]; // 수학 점수 총점
