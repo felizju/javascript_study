@@ -49,7 +49,7 @@ console.log(dog);
 delete dog.owner;
 console.log(dog);
 
-// for ~ in (ES6)
+// for ~ in (ES6) 키를 뽑아서 loop
 console.log("===========================");
 
 for(var key in cat){
