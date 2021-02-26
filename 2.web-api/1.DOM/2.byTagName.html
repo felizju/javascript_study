@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <ul id="fruits">
+        <li id="apple">Apple</li>
+        <li id="banana">Banana</li>
+        <li id="grape">Grape</li>
+    </ul>
+
+    <ol>
+        <li>야야야</li>
+        <li>왜왜왜</li>
+    </ol>
+
+
+
+
+    <script>
+
+        // 유사배열 (배열 + 객체)
+        // key가 인덱스처럼 구성되어 있고 length프로퍼티가 있음
+        const arr = {
+            0 : 'a',
+            1 : 'b',
+            2 : 'c',
+            length : 3
+        };
+
+        const $ul = document.getElementById('fruits');
+
+        // const $liArray = document.getElementsByTagName('li');
+        const $liArray = $ul.getElementsByTagName('li');
+        console.log($liArray);
+        console.log($liArray[0]); // 배열 : 사실을 객체 중 key['properties']
+        console.log($liArray.length);
+        console.log($liArray.banana); // 객체
+
+    
+        for(let $ele of $liArray){
+            $ele.style.fontStyle = 'italic';
+        }
+    
+
+        for(let i = 0; i < $liArray.length; i++){
+            $liArray[i].style.color = 'red';
+        }
+
+    </script>
+    
+</body>
+</html>
