@@ -53,7 +53,8 @@ console.log(dog);
 console.log("===========================");
 
 for(var key in cat){
-    console.log(cat[key]);
+    console.log(key);   // key 가지고 오기
+    console.log(cat[key]);  // value 가지고 오기
 }
 
 // 객체의 프로퍼티 키의 존재 유무 확인(in 키워드)

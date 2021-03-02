@@ -19,7 +19,7 @@ while(true){
     if(tvqx.length === 0){ // tvqx 배열에 아무것도 없을 때 종료
         break;
     }
-
+    
     var delMember = prompt(`[${tvqx}]\n삭제할 멤버 이름을 입력해주세요!`);
     var result = tvqx.indexOf(delMember);
 

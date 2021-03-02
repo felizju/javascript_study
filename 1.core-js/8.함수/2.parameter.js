@@ -27,7 +27,6 @@ function selectRandomFood(){
     var rn = Math.random();
     return rn > 0.5 ? '짜장면' : '짬뽕';
 }
-
 console.log(`랜덤음식 : ${selectRandomFood()}`);
 
 
@@ -38,7 +37,6 @@ function multiply(n1, n2){
         console.log('숫자를 전달하세요!');
         return;
     }
-    
     return n1 * n2;
 }
 

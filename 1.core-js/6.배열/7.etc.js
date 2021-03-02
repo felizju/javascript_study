@@ -1,5 +1,7 @@
 
+
 var foods = ['떡볶이', '오뎅', '김말이', '닭꼬치'];
+
 
 // indexOf() : 배열 요소의 인덱스를 알려줌
     // 탐색 실패 시 -1 반환
@@ -13,7 +15,7 @@ console.log(`includes 탐색 결과 : ${includes}`);
 //slice() : 배열을 잘라냄 (부분 추출 시 사용)
     // 시작 값 , 종료 값 (종료 값은 포함되지 않음)
     // 원본은 변하지 않는다. 복사 추출임
-var arr = [0,1,2,3,4,5,6,7,8,9];
+var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var slicedArr = arr.slice(3, 8);
 console.log(slicedArr);
 console.log(foods);
@@ -35,7 +37,7 @@ console.log(foodStr);
 
 // concat() : 배열을 결함
     // 원본은 변하지 않는다. 복사 추출임
-    var arr1 = [10, 20, 30];
+var arr1 = [10, 20, 30];
 var arr2 = [500, 600, 700];
 
 var concatedArr = arr1.concat(arr2);

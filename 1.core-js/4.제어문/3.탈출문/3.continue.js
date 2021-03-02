@@ -3,13 +3,14 @@
 
 for(var i = 1; i < 11; i++){
     if(i % 2 === 0){
-        continue;
-        // continue : if조건문이 true인 값 skip
-        // break;
-        // break : 2일때 break 만나서 1만 찍힘
+        // continue;
+        break;
+        // continue : skip만 하고 마지막 i는 출력
+        // break : for문 아예 박살, i출력 안함
     }
     console.log(i);
 }
+
 while(true){
     var n = +prompt("정수를 입력하세요."); // 정수 입력하면 메롱메롱
     

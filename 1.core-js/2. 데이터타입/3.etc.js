@@ -3,7 +3,7 @@
 var logical = false;
 logical = true;
 
-// logical = True; -- 변수로 인식
+// logical = True;-- 변수로 인식
 console.log(logical);
 
 // logical = "true"; --문자열로 인식

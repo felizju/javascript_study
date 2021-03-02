@@ -24,4 +24,5 @@ console.log(10/4);
 
 console.log(30/"메롱");
 
+// NaN : Not a number
 var notaNum = NaN;

@@ -14,9 +14,7 @@ function outer(x){ // outer local x 가 지역변수로 온다
         console.log(y);
         console.log(z);
     }
-
     inner();
 }
-
 outer('outer local x');
 console.log(x);

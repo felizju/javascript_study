@@ -4,7 +4,6 @@
 */
 
 //360과 90이 리턴되어야 함!
-
     // 화살표 함수
     /*
 var calcNumbersTotalAndAverage (...number) => {

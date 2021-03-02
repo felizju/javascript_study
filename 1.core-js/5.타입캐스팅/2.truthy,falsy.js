@@ -10,13 +10,16 @@ if(0) console.log('OK7');
 if([1,2,3]) console.log('OK8');
 
 
+
+// true : 1 , 그 외
+// false : 0 , undefined, null, NaN, ''(빈문자열)
 for(var i = 0; i < 10; i++){
     if(i % 2){
         console.log(i);
     }
 }
 
-var drink = 0;
+var drink = 1;
 
 if(drink){
     console.log(`음료수가 ${drink}개 있습니다.`);

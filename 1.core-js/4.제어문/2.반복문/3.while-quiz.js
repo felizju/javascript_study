@@ -10,14 +10,14 @@ ex)  정수 3 , 7 을 입력했을 시 3 + 4 + 5 + 6 + 7 의
      총합 25를 출력해야 함!
 */
 
-var x = +prompt("첫번째 정수를 입력하세요."); // 3
-var y = +prompt("두번째 정수를 입력하세요.");  // 7
+var begin = +prompt("첫번째 정수를 입력");
+var end = +prompt("두번째 정수를 입력");
 
-var n = 1; // 제어변수 (begin)
-var sum = x; // 반복실행문
+var n = begin; // 시작값
+var total = 0;
 
-while(n <= y){ // (end)
-    sum += n; // 반복실행문
-    n++; // 제어변수의 증감식 (step)
+while (n <= end) { // 조건, 종료값
+    total += n;
+    n++;
 }
-alert(`총합 : ${sum}`);
+alert(`${begin}~${end}까지의 총합: ${total}`);

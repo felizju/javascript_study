@@ -35,7 +35,9 @@ var salaries = {
     park: 1600000,
     lee: 1300000
   }
+
   var total = 0;
+  
   for(var key in salaries){
     total += salaries[key];
   }

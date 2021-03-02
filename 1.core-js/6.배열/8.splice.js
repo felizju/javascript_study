@@ -1,4 +1,5 @@
 
+
 // splice() : 배열의 특정 요소 제거
     // 인덱스번호 , 삭제할 요소 갯수
 var foods = ['떡볶이', '오뎅', '김말이', '닭꼬치'];
@@ -24,7 +25,7 @@ foods.push('보쌈', '닭발');
 console.log(foods);
 
 // 사용자의 삭제 요구 데이터
-var input = '짜장면';
+var input = '치킨';
 
 if(foods.includes(input)){
     var delFood = foods.splice(foods.indexOf(input),1);

@@ -12,7 +12,7 @@
 */
 
 // 정답 횟수 오답 횟수 저장변수
-var count1 = 0, count2 = 0;
+var cnt1 = 0, cnt2 = 0;
 
 
 while(true){
@@ -54,13 +54,13 @@ while(true){
 
     if(userAnswer === realAnswer){
         alert(`정답입니다.`);
-        count1++;
+        cnt1++;
     }
     
     else{
         alert(`오답입니다.`);
-        count2++;
+        cnt2++;
     }
 }
 alert(`프로그램이 종료되었습니다.
-#정답 횟수 : ${count1} , 오답횟수 : ${count2}`);
+#정답 횟수 : ${cnt1} , 오답횟수 : ${cnt2}`);

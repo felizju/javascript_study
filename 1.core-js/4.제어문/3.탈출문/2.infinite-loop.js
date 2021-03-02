@@ -4,6 +4,7 @@ while(true){
     var rn = Math.floor(Math.random() * 6);
     console.log(`랜덤 값 : ${rn}`);
 
+    // 반복문 종료 조건
     if(rn === 3){
         console.log("반복문 종료");
         break;

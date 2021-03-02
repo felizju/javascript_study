@@ -21,7 +21,7 @@ console.log(`x : ${x}`);
 // 전위 연산(prefix), 후위 연산(postfix)
 console.log("==============================");
 
-var a =10, result;
+var a = 10, result;
 // 후위연산 : 선 할당 후 연산
 result = a++;
 console.log(`result : ${result}, a : ${a}`); // 10 11
