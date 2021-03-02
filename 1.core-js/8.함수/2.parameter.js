@@ -31,7 +31,6 @@ console.log(`랜덤음식 : ${selectRandomFood()}`);
 
 
 function multiply(n1, n2){
-
     // 타입 체크하기
     if(typeof n1 !== 'number' || typeof n2 !== 'number'){
         console.log('숫자를 전달하세요!');

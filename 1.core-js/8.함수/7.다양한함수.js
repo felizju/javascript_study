@@ -31,10 +31,10 @@ var greeting2 = () => console.log('hello!');
 greeting1();
 greeting2();
 
-console.log("==============================");
 
 // 즉시 실행 함수 : 일회성 함수
 // 이름 없음, 익명함수
+console.log("==============================");
 (function(x, y) {
     console.log(`x + y = ${x + y}`);
 }(60,50));

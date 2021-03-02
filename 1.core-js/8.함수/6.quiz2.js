@@ -6,8 +6,10 @@ Q. n의 약수의 개수를 구하기
 3. 힌트) 전달받은 n을 1부터 n까지 지속적으로 나누어
    나누어 떨어졌을 시 약수의 개수 카운트를 1증가시키고 출력.
 */
+
 var divCount = calcDivisor(24);
 console.log(`약수의 개수: ${divCount}개`);
+
 
 // 방법1
 function calcDivisor(num){

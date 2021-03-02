@@ -42,8 +42,9 @@ function operationAll(n1, n2){
         multi : n1 * n2,
         divide : n1 / n2
     }
+    // return은 무조건 하나만, 여러개 사용하고 싶다면 배열 혹은 객체로 사용
     return n1+n2;
-    return n1-n2; // return은 무조건 하나만, 여러개 사용하고 싶다면 배열 혹은 객체로 사용
+    return n1-n2; 
 
 }
 
