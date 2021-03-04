@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- addEventListener 방식 : 하나의 요소에 두개 이상의 이벤트 등록 가능 -->
+    <button id="btn">클릭</button>
+
+    <script>
+        
+        const $btn = document.getElementById('btn');
+
+        function hello(){
+            alert(`hello!!!`);
+        }
+
+        $btn.addEventListener('click', hello);
+
+        // 익명 함수
+        $btn.addEventListener('click', function(){
+            alert(`world!!!`);
+        });
+        
+        // 화살표 함수
+        $btn.addEventListener('click', ()=>{
+            alert(`bye!!!`);
+        });
+
+        // 이벤트 핸들러 제거
+            // 익명함수일 경우엔 제거 불가능 , 이름이 없음
+        $btn.removeEventListener('click', hello);
+
+    </script>
+
+</body>
+</html>
