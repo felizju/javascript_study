@@ -24,3 +24,5 @@ if(!foodMenu.contains("짜장면")){
     orderFood();
 }
 */
+
+console.log(4%2);

@@ -23,10 +23,12 @@
         const $fruits = document.getElementById('fruits');
 
         // 기준 노드의 모든 자식 노드를 탐색, 텍스트노드 포함
+            // NodeList
         const $childNodes = $fruits.childNodes;
         console.log($childNodes);
 
         // 기준 노드의 모든 자식 노드를 탐색, 텍스트노드 제외
+            // HTMLCollection
         const $children = $fruits.children;
         console.log($children);
 
