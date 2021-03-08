@@ -51,9 +51,8 @@
         CSS와 JS를 적절히 사용하여 처음에는 ul이 보이지 않다가 추천 점심 메뉴를 클릭하면 나타나도록 이벤트를 구현하세요.
         */
 
-        const $lunches = document.getElementById('lunches');
+       const $menu = document.querySelector('.menu');
         const $title = document.querySelector('.title');
-        const $menu = document.querySelector('.menu');
 
         $title.addEventListener('click', ()=>{
             $menu.classList.toggle('open');
