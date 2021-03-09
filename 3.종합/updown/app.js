@@ -26,12 +26,6 @@ function makeNumberIcons(){
 
 
 
-function clearNumberIcons($numbers){
-    for (let $icon of [...$numbers.children]) {
-        $numbers.removeChild($icon);
-    }
-}
-
 
 // Up&Down 애니메이션을 작동시킬 클래스 추가/제거 함수 정의
 function executeUpDownAnimation(isUp){
@@ -46,14 +40,25 @@ function prcessCorrect($target){
     // 축하 메시지 박스 나타나게 하는 코드
     const $finish = document.getElementById('finish');
     $finish.classList.add('show');
-
+    
     // 정답 아이콘 움직이게 하는 코드
     $target.setAttribute('id', 'move');
 }
 
+
+
+
+function clearNumberIcons($numbers){
+    for (let $icon of [...$numbers.children]) {
+        $numbers.removeChild($icon);
+    }
+}
+
+
+
 // 정답을 판별해주는 함수 정의
 function checkAnwser($numbers, $target){
-
+    
     // 객체 디스트럭처링
     const{secret, answer} = gameDatas;
     
@@ -88,7 +93,9 @@ function checkAnwser($numbers, $target){
 
     //정답 판별 이후 아이콘 재배치
     clearNumberIcons($numbers);//현재 렌더링 되어 있는 아이콘들 전체 삭제
-    makeNumberIcons(); //min, max 변화대로 재배치
+
+    //min, max 변화대로 재배치
+    makeNumberIcons();
 }
 
 
