@@ -15,7 +15,7 @@ input, button {
 }
 @keyframes delMove {
     0% {
-        background: orange;
+        background: yellow;
         transform: translateX(20px);
     }
     50% {

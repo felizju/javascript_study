@@ -122,12 +122,12 @@ $label.classList.toggle('checked');
 // console.log($label.parentNode.dataset.id);
 const dataId = +$label.parentNode.dataset.id;
 
-//8. dataId를 기반으로 배열을 탐색하여 data-id와 일치하는 id프로퍼티를
+// 8. dataId를 기반으로 배열을 탐색하여 data-id와 일치하는 id프로퍼티를
 //   가진 객체의 인덱스를 얻어와야 함.
 const index = findIndexByDataId(dataId);
 //console.log('idx: ', index);
 
-//9. 해당 인덱스로 특정 객체에 접근하여 done의 값을 변환
+// 9. 해당 인덱스로 특정 객체에 접근하여 done의 값을 변환
 if (index !== null) {
     todos[index].done = !todos[index].done;
 }
@@ -137,13 +137,16 @@ if (index !== null) {
 
 //할 일 삭제 처리 함수 정의
 function removeToDoData($delTarget) {
-//1. 삭제를 하려면 ul에서 li를 지워야 함. 
-//2. 지우려면 ul노드랑 삭제대상 li의 노드를 받아야 함.
+// 1. 삭제를 하려면 ul에서 li를 지워야 함. 
+// 2. 지우려면 ul노드랑 삭제대상 li의 노드를 받아야 함.
 $delTarget.classList.add('delMoving');
 
+// 비동기 실행을 위한 함수 (실행 시간을 늦출 수 있음.)
+    // 1.5초 이후에 삭제해라
 setTimeout(() => {
     document.querySelector('.todo-list').removeChild($delTarget);
-}, 1400);
+}, 1500);
+
 
 const index = findIndexByDataId(+$delTarget.dataset.id);
 if (index != null) {
@@ -233,7 +236,7 @@ $todoList.addEventListener('click', e => {
 
     // console.log(e.target.parentNode.parentNode);
 
-    // if (confirm('진짜 삭제합니까?')) {
+    // if (confirm('진짜 삭제하시겠습니까?')) {
         removeToDoData(e.target.parentNode.parentNode);
     // }
 });
