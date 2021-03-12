@@ -1,5 +1,4 @@
 
-
 var greeting;
 greeting = 'hello';
 greeting = "하이";
@@ -30,8 +29,8 @@ console.log(template);
 console.log("==========================================");
 
 
-var month =12;
-var day= 25;
+var month = 12;
+var day = 25;
 var anniversary = "크리스마스";
 
 console.log(month+"월 "+day+"일은"+anniversary+"입니다.");

@@ -4,7 +4,6 @@ let x = 100;
 // let x = 500;
     // SyntaxError: Identifier 'x' has already been declared
 
-
 // 2. 블록레벨 스코프를 지원
 if (true){
     let y = 100;

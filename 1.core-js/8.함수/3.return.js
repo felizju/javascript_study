@@ -1,5 +1,4 @@
 
-
 function add(n1, n2){
     // return : 결과값 반드시 가지고 올 때
     return n1 + n2;
@@ -45,7 +44,6 @@ function operationAll(n1, n2){
     // return은 무조건 하나만, 여러개 사용하고 싶다면 배열 혹은 객체로 사용
     return n1+n2;
     return n1-n2; 
-
 }
 
 var results = operationAll(10,2);

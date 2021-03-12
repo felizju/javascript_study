@@ -17,4 +17,3 @@ console.log(firstElem);
 
 foods.unshift('떡볶이');
 console.log(foods);
-

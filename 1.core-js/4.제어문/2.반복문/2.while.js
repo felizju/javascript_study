@@ -59,5 +59,3 @@ while(num <= 4000){
     num++;
 }
 console.log(`count : ${count}`);
-
-

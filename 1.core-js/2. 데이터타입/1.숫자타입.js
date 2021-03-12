@@ -1,5 +1,4 @@
 
-
 var integer = 100;
 var float = 3.14;
 

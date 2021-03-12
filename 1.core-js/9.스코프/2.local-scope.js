@@ -1,5 +1,4 @@
 
-
 var x = 'global x'; // 전역변수 : 최소화시켜야 함
 
 function outer(x){ // outer local x 가 지역변수로 온다

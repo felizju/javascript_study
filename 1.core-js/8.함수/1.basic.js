@@ -46,5 +46,3 @@ var ct = calculateTotal;    // calculateTotal -> ct로 변경
 
 var result4 = ct(200);
 console.log(result4);
-
-

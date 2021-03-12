@@ -1,5 +1,4 @@
 
-
 var apple = "사과";
 var apple = "애플";
 console.log(apple);
@@ -25,4 +24,3 @@ var MyPhoneNumber; // 파스칼 케이스 (변수 이름에 사용 안함)
 
 var 과일 = "사과";
 console.log(과일);
-

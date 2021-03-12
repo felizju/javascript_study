@@ -54,4 +54,3 @@ console.log(`함수 실행 결과 값 : ${result}`);
 
 var result2 = sayHello();
 console.log(result2);
-

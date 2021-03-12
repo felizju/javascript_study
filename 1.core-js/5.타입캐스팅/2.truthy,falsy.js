@@ -1,5 +1,4 @@
 
-
 if('') console.log('OK1');
 if('hello') console.log('OK2');
 if(undefined) console.log('OK3');

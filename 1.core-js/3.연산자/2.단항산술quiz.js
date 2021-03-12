@@ -1,5 +1,4 @@
 
-
 var a = 1, b = 1;
 var c = ++a;
 var d = b++;

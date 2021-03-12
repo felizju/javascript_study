@@ -74,5 +74,3 @@ for (var n of numbers) {
 
 // console.log(filtered);
 // console.log(mapped);
-
-

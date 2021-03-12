@@ -35,4 +35,3 @@ console.log(`result : ${result}, a : ${a}`); // 12 11
 
 result = --a; 
 console.log(`result : ${result}, a : ${a}`); // 10 10
-

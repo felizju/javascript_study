@@ -5,8 +5,8 @@ var b = '5';
 // == 연산자는 암묵적으로 문자열 내부에 숫자가 있으면
 // 자동으로 숫자로 변환 후 비교함
 
-console.log(a==b);  // 값만 비교
-console.log(a===b); // 값과 타입까지 비교
+console.log(a == b);  // 값만 비교
+console.log(a === b); // 값과 타입까지 비교
 
 // 동등비교는 결과 예측이 힘드므로 사용하지 않는 것을 추천
 console.log("=========================");
@@ -19,7 +19,7 @@ console.log(false == '0');
 // 일치비교에서는 NaN 주의, NaN은 자신과 일치하지 않는 유일한 값이다
 console.log("=========================");
 console.log(NaN === NaN);
-console.log(isNaN(NaN,NaN));
+console.log(isNaN(NaN, NaN));
 
 // 대소비교
 console.log("=========================");

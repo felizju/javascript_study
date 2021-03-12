@@ -1,5 +1,4 @@
 
-
 var age = 11;
 
 if(age >= 20){

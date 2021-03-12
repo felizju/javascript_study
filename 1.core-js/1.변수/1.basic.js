@@ -1,5 +1,4 @@
 
-
 // 변수 선언
     // 데이터타입 데이터명
 var total;
@@ -9,7 +8,7 @@ console.log(total); // 출력 명령
 total = 100;
 console.log(total);
 
-var result = 10+20;
+var result = 10 + 20;
 console.log(result);
 
 // 변수의 값 변경
@@ -21,8 +20,8 @@ var copyresult = result
 console.log(copyresult);
 
 result = 100;
-console.log('result = '+result);
-console.log('copyresult = '+copyresult);
+console.log('result = ' + result);
+console.log('copyresult = ' + copyresult);
 
 total = total * 2;
 console.log(total);

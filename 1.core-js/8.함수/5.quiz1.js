@@ -35,12 +35,3 @@ function calcNumbersTotalAndAverage(...numbers){
 
 var result = calcNumbersTotalAndAverage(100, 100, 80, 85);
 console.log(`총합 : ${result.total} , 평균 : ${result.avg}`);
-
-
-
-
-
-
-
-
-

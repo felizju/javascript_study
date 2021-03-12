@@ -12,4 +12,3 @@ console.log(logical);
 //null
 var banana = "바나나";
 banana = null; // 없는 상태
-

@@ -1,5 +1,4 @@
 
-
 var ex = 10 + '20'; // String
 console.log(ex);
 

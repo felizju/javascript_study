@@ -31,7 +31,6 @@ const gameDatas = {
 
 // 무한루프 종료를 확인해주는 함수
 function isGameFinish(){
-
    return inputNumber();
 }
 
@@ -48,7 +47,6 @@ function inputNumber() {
    // return checkNumber();
    const flag = checkNumber(); // true
    return flag;
-
 }
 
 
