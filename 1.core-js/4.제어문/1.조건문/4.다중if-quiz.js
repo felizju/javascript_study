@@ -13,7 +13,6 @@
 
 var int = +prompt("정수를 입력하세요.");
 
-
 if(int === 0){
     alert("입력하신 숫자는 0입니다.");
 }else if(int % 7 === 0){

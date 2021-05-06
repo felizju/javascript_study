@@ -7,13 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    
     <p>아무 곳이나 클릭하세요!</p>
     <em class="message"></em>
 
     <script>
-
         const $em = document.querySelector('.message');
-
         
         // 문서 전체에 이벤트 핸들러 등록
             // 이벤트 객체를 'e'(파라미터로 넣어줌) Event 약자
@@ -22,8 +21,6 @@
             console.log(e);
             $em.textContent = `x : ${e.clientX} ,  y : ${e.clientY}`
         });
-
-
     </script>
 
 </body>

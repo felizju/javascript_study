@@ -33,7 +33,7 @@ while (true) {
         //사용자가 입력한 패스워드
         var inputPw = prompt('비밀번호를 입력하세요.');
         //실제 패스워드
-        var realPw = user[inputId];
+        var realPw = user[inputId]; // user객체의 key값 -> obj[key] = value 
 
         //패스워드 일치 검증
         if (inputPw === realPw) {

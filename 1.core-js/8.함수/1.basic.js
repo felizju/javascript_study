@@ -14,16 +14,16 @@ function calculateTotal(x){
 
 // 기본
 function add1(n1, n2){
-    return n1+n2;
+    return n1 + n2;
 }
 
 // 함수 리터럴
-var add2 = function(n1,n2){
-    return n1+n2;
+var add2 = function(n1, n2){
+    return n1 + n2;
 };
 
 // 화살표 함수 (ES6)
-var add3 = (n1, n2) => n1+n2;
+var add3 = (n1, n2) => n1 + n2;
 
 console.log(add1(10, 20));
 console.log(add2(10, 20));

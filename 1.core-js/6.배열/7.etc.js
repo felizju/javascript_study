@@ -6,7 +6,7 @@ var foods = ['떡볶이', '오뎅', '김말이', '닭꼬치'];
 var index = foods.indexOf('순대');
 console.log(`찾은 인덱스 번호 : ${index}`);
 
-// includes() : 배열 요소의 존재 여부 확인
+// includes() : 배열 요소의 존재 여부 확인 true/false
 var includes = foods.includes('닭꼬치');
 console.log(`includes 탐색 결과 : ${includes}`);
 

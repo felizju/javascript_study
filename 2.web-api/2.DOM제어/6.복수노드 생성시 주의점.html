@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
 
     <ul id="fruits">
-
     </ul>
+
     <script>
         // Live DOM : 사전에 미리 렌더링 되어 있는 요소 노드
         const $fruits = document.getElementById('fruits');
@@ -37,7 +35,7 @@
          */
 
         // 가상 부모 DOM 생성
-        // DocumentFragment : 진짜 의미의 virtual DOM, 실체가 없는
+            // DocumentFragment : 진짜 의미의 virtual DOM, 실체가 없는
         const $frag = document.createDocumentFragment();
         // const $div = document.createElement('div');
         for (let f of fruitNames) {
@@ -48,8 +46,7 @@
         }
         // 마지막에 한번만 div appending
         $fruits.appendChild($frag);
-
     </script>
-</body>
 
+</body>
 </html>

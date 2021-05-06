@@ -18,7 +18,7 @@
         // const $elem = document.querySelector('.banana');
         // const $elem = document.querySelector('#fruits > li:nth-child(2)');
         // const $elem = document.querySelector('li[class="fruit banana"]');
-        const $elem = document.querySelector('li.apple + li');
+        const $elem = document.querySelector('li.apple + li'); // Banana
         $elem.style.color = 'yellow';
 
 
@@ -33,9 +33,8 @@
         // 없는 아이디로 취득 : null 반환
         const $test = document.querySelector('#peach');
         // 없는 아이디로 취득 : 빈 배열 반환
-        const $test = document.querySelectorAll('#peach');
+        // const $test = document.querySelectorAll('#peach');
         console.log($test);
-
     </script>
 
 </body>

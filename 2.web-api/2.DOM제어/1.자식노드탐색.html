@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
 
     <ul id="fruits">
@@ -22,12 +20,12 @@
         const $fruits = document.getElementById('fruits');
 
         // 기준 노드의 모든 자식 노드를 탐색, 텍스트노드 포함
-            // NodeList
+            // childNodes = NodeList
         const $childNodes = $fruits.childNodes;
         console.log($childNodes);
 
         // 기준 노드의 모든 자식 노드를 탐색, 텍스트노드 제외
-            // HTMLCollection
+            // children = HTMLCollection
         const $children = $fruits.children;
         console.log($children);
 
@@ -46,7 +44,6 @@
         // 텍스트 노드를 제외한 요소노드의 여부를 확인
         // 자식 노드들을 취득한 후 length값을 논리로 바꾸어 확인
         console.log(!!$test.children.length);
-
     </script>
 
 </body>

@@ -10,7 +10,6 @@ Q. n의 약수의 개수를 구하기
 var divCount = calcDivisor(24);
 console.log(`약수의 개수: ${divCount}개`);
 
-
 // 방법1
 function calcDivisor(num){
     // 약수 넣을 배열
@@ -27,14 +26,12 @@ function calcDivisor(num){
 }
 
 
-
 // 방법 2
 /*
 var divCount = calcDivisor(24);
 console.log(`약수의 개수: ${divCount}개`);
 
 function calcDivisor(num){
-    
     var divCount = 0;
     var results = [];
     for(var n = 1; n <= num; n++){

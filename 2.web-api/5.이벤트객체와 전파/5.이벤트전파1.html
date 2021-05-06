@@ -17,6 +17,7 @@
     </style>
 </head>
 <body>
+
     <ul id="fruits">
         <li>Apple</li>
         <li>Banana</li>
@@ -24,7 +25,6 @@
     </ul>
 
     <script>
-
         const $fruits = document.querySelector('#fruits');
 
         $fruits.addEventListener('click', e => {
@@ -45,11 +45,7 @@
             // 자식 이벤트만 발생시키게 함
             e.stopPropagation();
         });
-
-
-
     </script>
 
-    
 </body>
 </html>

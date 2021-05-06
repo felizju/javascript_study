@@ -1,6 +1,7 @@
 
 // 명시적 문자열 변환
 var a = 10, b = 20;
+
     // 첫번째 방법 : String()
 var result1 = String(a) + String(b);
 
@@ -19,6 +20,7 @@ console.log("=================================");
 
 // 명시적 숫자 변환
 var m = '100' , n = '3.14';
+
     // 첫번재 방법 : Number()
 var res1 = Number(m) + Number(n);
 console.log(`Number변환 : ${res1}`);

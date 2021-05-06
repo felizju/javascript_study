@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
+
     <div id="wrap">
         <h1>탐색 선택자 및 html조작</h1>
         <h2>탐색 선택자</h2>
@@ -40,12 +39,10 @@
         </ul>
     </div>
 
-    
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
-
         // jQuery에서는 첫번째 요소를 0번으로 처리
         $('#list1 li:odd').css('background','yellow');
         $('#list1 li:even').css('background','skyblue');
@@ -66,8 +63,6 @@
         
         // has() : li중에 span태그를 가지고 있는 것을 선택
         $('#list2 li:has("span")').css('color','aqua');
-
-
 
 
 
@@ -96,9 +91,7 @@
         // $('#list3 li').remove('.obj1');
 
         
-        
         // 속성 노드 제어
-
         // getAttribute
         // document.querySelector('#list3 li:first-child').getAttribute('class');
         const className = $('#list3 li').eq(0).attr('class');
@@ -110,11 +103,7 @@
         // 클래스 제어
         $('#list3 li').eq(2).addClass('obj3');
         $('#list3 li').eq(2).removeClass('obj3');
-
-        
-
     </script>
 
 </body>
-
 </html>

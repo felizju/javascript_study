@@ -14,6 +14,8 @@ var total = 0, avg = 0;
 scores[scores.length] = 10;
 scores[scores.length] = 100;
 scores[scores.length] = 70;
+
+console.log(scores);
 /*
 for(var i = 0; i < scores.length; i++){
     total += scores[i];

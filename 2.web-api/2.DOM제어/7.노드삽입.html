@@ -24,11 +24,11 @@
         $fruits.insertBefore($li, $fruits.lastElementChild);
 
         const $banana = document.querySelector('#fruits>li:nth-child(2)');
+        
         // 이미 배치된 DOM을 다시 한번 insertBefore하면 노드가 이동됨
         $fruits.insertBefore($li, $banana);
 
         $fruits.insertBefore($banana, $fruits.firstElementChild);
-
     </script>
 
 </body>

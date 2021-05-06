@@ -1,17 +1,17 @@
 
 // 기본형태 : 함수 정의문 *****
 function add1(n1, n2){
-    return n1+n2;
+    return n1 + n2;
 }
 
 // 함수리터럴 : 함수 표현식
-var add2 = function(n1,n2){
-    return n1+n2;
+var add2 = function(n1, n2){
+    return n1 + n2;
 };
 
 // 화살표 함수 (ES6) : 함수 리터럴의 람다식형태
 var add3 = (n1, n2) => {
-    return n1+n2;
+    return n1 + n2;
 };
 
 // 더 생략 *****

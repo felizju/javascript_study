@@ -19,12 +19,11 @@ console.log(exStr);
 var temp = '<ul>\n\t<li>\n\t\tHome</li></ul>';
 // ``백틱 사용 하면 쉽게 가능
 var template = `<ul>
-    <li>
-        <a href="#">Home</a>
-    </li>
-</ul>
-`;
-
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+                `;
 console.log(template);
 console.log("==========================================");
 

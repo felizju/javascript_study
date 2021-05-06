@@ -7,7 +7,7 @@ var num = 3;
 console.log(num**3); // ES7문법
 console.log(Math.pow(num, 3)); // ES7문법 이전
 
-console.log(Math.pow(Math.pow(num, 3),4)); // 중첩이 심해져서 업그레이드
+console.log(Math.pow(Math.pow(num, 3), 4)); // 중첩이 심해져서 업그레이드
 
 // 단항 산술 연산자 ++, --
 console.log("==============================");

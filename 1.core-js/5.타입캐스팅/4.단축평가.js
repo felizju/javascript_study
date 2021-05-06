@@ -1,16 +1,15 @@
 
-// OR 연산
+// OR 연산 - false:0, true:1
 console.log('hello' || 'world');
 console.log(0 || '안녕');
 console.log('잘가' || 123);
 
-// AND 연산
+// AND 연산 - false:0, true:1
 console.log('hello' && 'world');
 console.log(0 && '안녕');
 console.log('잘가' && 123);
 
 console.log("==============================");
-
 
 // 응용 예시
 var x = 10;

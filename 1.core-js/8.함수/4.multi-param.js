@@ -2,11 +2,11 @@
 
 // 2개의 정수의 합을 구하는 함수
 function add(n1, n2){
-    return n1+n2;
+    return n1 + n2;
 }
 // 3개의 정수의 합을 구하는 함수
 function addFor3(n1, n2, n3){
-    return n1+n2+n3;
+    return n1 + n2 + n3;
 }
 
 // n개의 정수의 합을 구하는 함수
@@ -22,5 +22,5 @@ function addAll(name, ...numbers){
     return total;
 }
 
-var res = addAll('고길동',10,10,10,50);
+var res = addAll('고길동', 10,10,10,50);
 console.log(res);

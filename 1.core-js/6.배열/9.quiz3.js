@@ -21,11 +21,11 @@ while(true){
     }
     
     var delMember = prompt(`[${tvqx}]\n삭제할 멤버 이름을 입력해주세요!`);
-    var result = tvqx.indexOf(delMember);
+    var result = tvqx.indexOf(delMember); // indexof 결과 없으면 -1 반환
 
     if(result >= 0){ // 조건2 == tvqx.includes(delMember)
         if(confirm(`${delMember} 정말로 삭제하시겠습니까?`)){
-            var result = tvqx.splice(result,1);
+            var result = tvqx.splice(result, 1);
             alert(`삭제 완료!\n남은 멤버 : ${tvqx}`);
         }
     }else{
