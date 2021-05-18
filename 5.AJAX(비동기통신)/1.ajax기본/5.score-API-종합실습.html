@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .del-btn {
+            width: 10px;
+            height: 10px;
+            background: red;
+            color: white;
+            border-radius: 5px;
+            margin-left: 5px;
+            text-decoration: none;
+            font-size: 0.7em;
+            padding: 6px;
+        }
+
+        .del-btn:hover {
+            background: orangered;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>시험 점수 등록</h1>
+    <div class="register">
+        <p>
+            # 이름: <input type="text" name="name">
+        </p>
+        <p>
+            # 국어: <input type="text" name="kor">
+        </p>
+        <p>
+            # 영어: <input type="text" name="eng">
+        </p>
+        <p>
+            # 수학: <input type="text" name="math">
+        </p>
+        <div>
+            <button id="sub-btn">확인</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <ul class="score-list">
+        <li>총 학생 수 : xx명
+        </li>
+
+    </ul>
+
+
+
+
+    <script>
+        window.onload = function () {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'http://localhost:8181/api/score');
+            xhr.send();
+
+
+            xhr.onload = e => {
+                if (xhr.status === 200) {
+                    makeScoreList(xhr.response);
+                    clearScoreList(xhr.response);
+                    makeScoreList(xhr.response);
+                } else {
+                    console.error('통신 실패!!!');
+                }
+            };
+        };
+
+
+
+        // 점수 리스트 생성 함수
+        function makeScoreList(score) {
+            const scoreList = JSON.parse(score);
+            const $ul = document.querySelector('.score-list');
+            for (let score of scoreList) {
+                const {
+                    stuNum,
+                    name,
+                    kor,
+                    eng,
+                    math,
+                    total,
+                    average
+                } = score;
+                const $li = document.createElement('li');
+                const $btn = document.createElement('button');
+                $btn.setAttribute('id', 'del-btn');
+                $btn.textContent = `삭제`;
+                $li.textContent =
+                    `# 학번 : ${stuNum}, 이름 : ${name}, 국어 : ${kor}, 영어 : ${eng}, 수학 : ${math}, 총점 : ${total}, 평균 : ${average}`;
+                $ul.appendChild($li);
+                $li.appendChild($btn);
+            }
+
+        }
+
+        // 점수 리스트 삭제 함수
+        function clearScoreList(score) {
+            const $list = makeScoreList();
+            const $ul = document.querySelector('.score-list');
+
+            for (let score of [...$list.children]) {
+                $list.removeChild($ul);
+            }
+
+
+        
+        }
+
+
+        document.getElementById('sub-btn').onclick = e => {
+            e.preventDefault();
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://localhost:8181/api/score');
+            const newData = {
+                name: document.querySelector('input[name=name]').value,
+                kor: document.querySelector('input[name=kor]').value,
+                eng: document.querySelector('input[name=eng]').value,
+                math: document.querySelector('input[name=math]').value
+            };
+            xhr.setRequestHeader('content-type', 'application/json');
+
+            const newJsonData = JSON.stringify(newData);
+
+            xhr.send(newJsonData);
+
+            xhr.onload = e => {
+                if (xhr.status === 200 || xhr.status === 201) {
+                    alert('입력 성공!');
+                } else {
+                    alert('입력 실패!');
+                }
+            };
+        };
+
+
+
+        /*
+                document.getElementById('del-btn').onclick = e => {
+                    e.preventDefault();
+                    
+                    const xhr = new XMLHttpRequest();
+                    const stuNum = document.querySelector('[name=stuNum]').value;
+                    xhr.open('POST', 'http://localhost:8181/api/score');
+                    xhr.send();
+
+                    xhr.onload = e => {
+                        if(xhr.status === 200){
+                            alert('입력 성공!');
+                        }else{
+                            alert('입력 실패!');
+                        }
+                    };
+                };
+        */
+    </script>
+</body>
+
+</html>

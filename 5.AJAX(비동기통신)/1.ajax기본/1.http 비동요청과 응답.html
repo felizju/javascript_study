@@ -9,8 +9,8 @@
 <body>
 
     <button id="load-btn">게시물 불러오기</button>
-    <ul class="content">
-    </ul>
+    <button id="hello-btn">자바 api 통신하기</button>
+    <ul class="content"></ul>
     
     <script>
 
@@ -65,6 +65,22 @@
                 $ul.appendChild($li);
             }
         }
+
+
+        // 스프링 REST API 통신
+        document.getElementById('hello-btn').onclick = e => {
+            const xhr = new XMLHttpRequest();
+            // xhr.open('GET', 'http://localhost:8181/api/v2/board-list');
+            xhr.open('GET', 'http://localhost:5000/article/3');
+            xhr.send();
+            
+            xhr.onload = e => {
+                console.log(xhr.response);
+            };
+    
+
+        };
+
 
     </script>
 
